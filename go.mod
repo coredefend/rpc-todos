@@ -1,4 +1,4 @@
-module github.com/coredefend/rpc-todo
+module github.com/coredefend/rpc-todos
 
 go 1.13
 
