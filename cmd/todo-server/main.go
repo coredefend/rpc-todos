@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/coredefend/rpc-todo/internal/todoserver"
-	pb "github.com/coredefend/rpc-todo/rpc/todo"
+	"github.com/coredefend/rpc-todos/internal/todoserver"
+	pb "github.com/coredefend/rpc-todos/rpc/todo"
 )
 
 func main() {

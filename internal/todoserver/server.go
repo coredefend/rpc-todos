@@ -3,8 +3,9 @@ package todoserver
 import (
 	"context"
 	"protobuf_using_go/twitchtv/twirp"
+
 	// Import our protobuf package, namespace it to pb. This is a convention!
-	pb "github.com/coredefend/rpc-todo/rpc/todo"
+	pb "github.com/coredefend/rpc-todos/rpc/todo"
 )
 
 // Create our Server type

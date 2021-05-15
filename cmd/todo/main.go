@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/coredefend/rpc-todo/rpc/todo"
+	"github.com/coredefend/rpc-todos/rpc/todo"
 )
 
 // Create global To-Do counter
