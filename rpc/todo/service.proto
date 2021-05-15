@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package coredefend.rpctodo.todo;
+option go_package = "./rpc/todo";
+
+service Todo {
+    rpc MakeTodo(TodoRequest) returns (Empty);
+    rpc GetTodo(TodoRequest) returns (TodoRequest);
+    rpc AllTodos(Empty) returns (TodoResponse);
+    rpc RemoveTodo(TodoQuery) returns (Empty);
+    rpc MarkComplete(TodoQuery) returns (Empty);
+}
+
+message TodoQuery {
+    int32 id = 1;
+}
+
+message TodoResponse {
+    repeated TodoRequest todos = 1;
+}
+
+message TodoRequest {
+    int32 ID = 1;
+    string title = 2;
+    bool complete = 3;
+}
+
+message Empty {
+}
